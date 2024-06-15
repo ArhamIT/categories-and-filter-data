@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h1>Login</h1>
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+
+    <div id="home-container" class="container" style="display: none;">
+        <h1>Todo List</h1>
+        <div class="input-group">
+            <input type="text" id="new-todo" placeholder="Enter a new task...">
+            <select id="category">
+                <option value="Homework">Homework</option>
+                <option value="Exams">Exams</option>
+                <option value="Projects">Projects</option>
+                <option value="Extracurricular">Extracurricular Activities</option>
+                <option value="Personal">Personal</option>
+            </select>
+            <button id="add-btn">Add</button>
+        </div>
+        <div class="input-group">
+            <label for="filter">Filter by Category:</label>
+            <select id="filter">
+                <option value="All">All</option>
+                <option value="Homework">Homework</option>
+                <option value="Exams">Exams</option>
+                <option value="Projects">Projects</option>
+                <option value="Extracurricular">Extracurricular Activities</option>
+                <option value="Personal">Personal</option>
+            </select>
+        </div>
+        <ul id="todo-list"></ul>
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
